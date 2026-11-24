@@ -278,6 +278,8 @@
               <option>6005A</option>
               <option>6082</option>
               <option>3003</option>
+              <option>3004</option>
+              <option>3105</option>
               <option>1100</option>
               <option>5052</option>
               <option>6463</option>
@@ -385,7 +387,7 @@
 </div>
 
 <script>
-const ALLOYS = {"6061": {"density": 0.098, "note": "Default / common tube alloy"}, "6063": {"density": 0.097, "note": "Common extrusion / drawn tube alloy"}, "6060": {"density": 0.097, "note": "6xxx extrusion alloy"}, "6005": {"density": 0.097, "note": "6xxx structural extrusion alloy"}, "6005A": {"density": 0.098, "note": "6xxx structural extrusion alloy"}, "6082": {"density": 0.098, "note": "Higher-strength 6xxx alloy"}, "3003": {"density": 0.099, "note": "3xxx manganese alloy"}, "1100": {"density": 0.098, "note": "Commercially pure aluminum"}, "5052": {"density": 0.097, "note": "5xxx magnesium alloy"}, "6463": {"density": 0.097, "note": "Bright-finish 6xxx alloy"}, "1050": {"density": 0.0975, "note": "High-purity 1xxx alloy"}, "1060": {"density": 0.0975, "note": "High-purity 1xxx alloy"}};
+const ALLOYS = {"6061": {"density": 0.098, "note": "Default / common tube alloy"}, "6063": {"density": 0.097, "note": "Common extrusion / drawn tube alloy"}, "6060": {"density": 0.097, "note": "6xxx extrusion alloy"}, "6005": {"density": 0.097, "note": "6xxx structural extrusion alloy"}, "6005A": {"density": 0.098, "note": "6xxx structural extrusion alloy"}, "6082": {"density": 0.098, "note": "Higher-strength 6xxx alloy"}, "3003": {"density": 0.099, "note": "3xxx manganese alloy"}, "3004": {"density": 0.098, "note": "3xxx manganese alloy"}, "3105": {"density": 0.098, "note": "3xxx manganese alloy"}, "1100": {"density": 0.098, "note": "Commercially pure aluminum"}, "5052": {"density": 0.097, "note": "5xxx magnesium alloy"}, "6463": {"density": 0.097, "note": "Bright-finish 6xxx alloy"}, "1050": {"density": 0.0975, "note": "High-purity 1xxx alloy"}, "1060": {"density": 0.0975, "note": "High-purity 1xxx alloy"}};
 const $ = id => document.getElementById(id);
 const num = id => {
   const raw = String($(id).value ?? "").replace(/,/g,"").trim();
